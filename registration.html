@@ -266,6 +266,23 @@ this is form.html branch....
   <footer>
     &copy; 2025 MLSA Event Portal | Designed by Sujana A | All rights reserved
   </footer>
-  
-    
+
+  <script>
+    const form = document.getElementById('registrationForm'); 
+     const message = document.getElementById('confirmationMessage');
+      form.addEventListener('submit', function(e) {
+      e.preventDefault();
+       message.style.display = 'block';
+      form.reset();
+     setTimeout(() => {
+        message.style.display = 'none';
+      }, 6000);
+	   });
+ 
+  </script>
+
+</body>
+
+</html>
+
 
